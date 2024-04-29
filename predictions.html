@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles-symptoms.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Dr.AI:Predictions</title>
+
+    <style>
+        /* Center the h2 element horizontally and vertically */
+        h2 {
+            text-align: center; /* Horizontally center the text */
+            margin-top: 50px; /* Adjust the top margin to vertically center the element */
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="static/heartbeat(red).mp4" type="video/mp4">
+    </video>
+
+    <h2>You have {{ prediction }}</h2>
+
+
+</body>
