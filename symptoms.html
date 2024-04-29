@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles-symptoms.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Dr.AI:Symptoms Log</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="static/heartbeat(white).mp4" type="video/mp4">
+    </video>
+
+    <form action="/predict" method="get"> <!-- we use get here -->
+        <div class="mb-3">
+            <input name="name" autofocus type="text" placeholder="Name">
+        </div>
+        <div class="mb-3">
+            <input name="age" type="numeric" placeholder="Age"> 
+        </div>
+        <div class="mb-3">
+            Symptom 1 Input
+        </div>
+        <div class="mb-3">
+            Symptom 2 Input
+        </div>
+        <div class="mb-3">
+            Symptom 3 Input
+        </div>
+        <div class="mb-3">
+            Symptom 4 Input
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
